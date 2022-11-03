@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types' 
 
 export default function Statistics({good,neutral,bad,total,positivePercentage}) {
   return (<>
@@ -10,3 +11,4 @@ export default function Statistics({good,neutral,bad,total,positivePercentage}) 
   )
 }
 
+Statistics.propTypes ={good:PropTypes.number,neutral:PropTypes.number,bad:PropTypes.number,total:PropTypes.number,positivePercentage:PropTypes.string}
